@@ -37,57 +37,29 @@ f.parentNode.insertBefore(j,f);
 <!-- ============================= -->
 <!-- Google Ads conversions -->
 <!-- ============================= -->
+
+<!-- Event snippet for Click to call conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
 <script>
-  /* Conversion #1 - used for clicks on the telephone number on this page. */
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof url !== 'undefined') { window.location.href = url; }
-    };
-    gtag('event', 'conversion', {
-      'send_to': 'AW-184515574/7Z_TCNXQ-PgcEMPYsd',
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18466329008/cbvrCNPfrYAdELCjt-VE',
+      'value': 1.0,
+      'currency': 'INR',
       'event_callback': callback
-    });
-    return false;
-  }
+  });
+  return false;
+}
+</script>
+
 
   /* Additional conversion actions kept available for other campaigns. */
-  function gtag_report_conversion_1(url) {
-    var callback = function () {
-      if (typeof url !== 'undefined') { window.location.href = url; }
-    };
-    gtag('event', 'conversion', {
-      'send_to': 'AW-184515574/7Z_TCNXQ-PgcEMP5E',
-      'event_callback': callback
-    });
-    return false;
-  }
 
-  function gtag_report_conversion_2(url) {
-    var callback = function () {
-      if (typeof url !== 'undefined') { window.location.href = url; }
-    };
-    gtag('event', 'conversion', {
-      'send_to': 'AW-184515443/3UYJCMLHlfocEMPYs',
-      'value': 1.0,
-      'currency': 'INR',
-      'event_callback': callback
-    });
-    return false;
-  }
-
-  function gtag_report_conversion_3(url) {
-    var callback = function () {
-      if (typeof url !== 'undefined') { window.location.href = url; }
-    };
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18557443/gPOiCN72ifocsd5E',
-      'value': 1.0,
-      'currency': 'INR',
-      'event_callback': callback
-    });
-    return false;
-  }
-</script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -103,7 +75,7 @@ f.parentNode.insertBefore(j,f);
     "@type": "Organization",
     "name": "Careworld T & C Services",
     "legalName": "Careworld T & C Services",
-    "url": "https://www.careworld.com/",
+    "url": "https://customersupportcareworld.netlify.app/",
     "email": "support@careworld.com",
     "telephone": "+1-201-279-1152",
     "description": "Careworld T & C Services provides customer information and general assistance for its own products and services.",
